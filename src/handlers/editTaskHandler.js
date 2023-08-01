@@ -1,5 +1,5 @@
-import { data} from '../data.js';
-import {dom} from '../dom.js';
+import  data from '../data.js';
+import dom from '../dom.js';
 
 const editTask = (id) => {
     const task = data.tasks.find((taskItem) => taskItem.id === id);

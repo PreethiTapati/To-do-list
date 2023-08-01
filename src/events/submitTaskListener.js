@@ -1,6 +1,6 @@
 
 
-import {dom} from'../dom.js';
+import dom from'../dom.js';
 import addTaskList from '../handlers/addTaskHandler.js';
 
 dom.submitBtn.addEventListener('click', (e) => {

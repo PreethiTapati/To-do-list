@@ -1,5 +1,5 @@
-import { data} from '../data.js';
-import {dom} from '../dom.js';
+import  data from '../data.js';
+import dom from '../dom.js';
 import createTask from '../components/createTask.js';
 
 const addTaskList = (value) => {

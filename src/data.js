@@ -1,4 +1,4 @@
-export const data = {
+ const data = {
     tasks: [
         {
             id: 1,
@@ -15,3 +15,4 @@ export const data = {
     ],
     id: 4,
 }
+export default data;

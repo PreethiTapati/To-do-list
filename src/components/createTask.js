@@ -1,4 +1,4 @@
-import {  dom } from '../dom.js';
+import dom  from '../dom.js';
 import editTask from '../handlers/editTaskHandler.js';
 import deleteTask from '../handlers/deleteTaskHandler.js';
 
