@@ -1,5 +1,5 @@
 
-# To do list application
+# To do list
 
 > An application capable of tracking activities, deleting them and modifying them.
 
