@@ -1,12 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --light: #EEE;
+    --yellow: #FFD700;
+    --blue: #49a6e9;
+    --pastel:#FFF6E0;
+}
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #5a5353;
-    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--darkest);
+    color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    /* Adjust the background image path as needed */
+    background-image: url('../assets/img2.png');
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.to-do-list-form {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.to-do-list-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-input-form {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--dark);
+    color: var(--light);
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid var(--grey);
+    border-radius: 8px 0 0 8px;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: var(--pink);
+    color: var(--light);
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--purple);
+}
+
+.error {
+    color: var(--pink);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.added-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: var(--darkest);
+    border-radius: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn i,
+.delete-btn i {
+    color: var(--pastel);
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.clear-all-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: var(--dark);
+    color: var(--pink);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.clear-all-btn:hover {
+    background-color: #c82333;
 }
